@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - A Lenda</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/aos.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/lenda logo.png" alt="Logo A Lenda">
+        </a>
+        <nav>
+            <ul class="header-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="jogar.html" class="btn">Jogar</a></li>
+            </ul>
+            <button class="menu-btn" onclick="mostrarmenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h1>Bem-vindo ao Jogo A Lenda!</h1>
+            <p>Jogue e descubra a história do Cavaleiro Lendário!</p>
+            <iframe src="game/index.html" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+
+                
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Jogo A Lenda - Desenvolvido por Fabinhutads</p>
+    </footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        function mostrarmenu() {
+            document.querySelector(".header-nav").classList.toggle("ativo");
+        }
+    </script>
+</body>
+</html>
