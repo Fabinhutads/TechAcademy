@@ -12,7 +12,7 @@
             <img src="img/lenda logo.png" alt="Logo A Lenda">
         </a>
         <nav>
-            <ul>
+            <ul class="header-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
@@ -21,16 +21,24 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="about">
-            <h1>Sobre</h1>
+        <section class="texto-sombreado">
+            <h1>A Lenda</h1>
             <p>No coração de um reino esquecido pelo tempo, a profecia ecoava entre as ruínas: um herói surgiria para restaurar o equilíbrio. O Cavaleiro Xamã, último guardião da luz, desperta para um mundo tomado pelas sombras. Criaturas malignas espreitam pelos labirintos, tentando impedir sua missão. Para salvar sua terra, ele deve coletar os minis cristais que mantêm a energia vital do reino. Mas apenas ao reunir os quatro grandes Cristais de Energia, seu verdadeiro poder será despertado. Com esse poder, as trevas serão dissipadas e um novo caminho se abrirá. O destino está traçado — a lenda está prestes a renascer!</p>
         </section>
-       
     </main>
 
     <footer>
         <p>© 2025 Jogo A Lenda - Desenvolvido por Fabinhutads</p>
     </footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        function mostrarmenu() {
+            document.querySelector(".header-nav").classList.toggle("ativo");
+        }
+    </script>
 </body>
 </html>
