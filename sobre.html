@@ -7,17 +7,21 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <a href="index.html">
-            <img src="img/lenda logo.png" alt="Logo A Lenda">
+            <img src="img/lenda logo.png" alt="Logo do site">
         </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
         <nav>
-            <ul class="header-nav">
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="galeria.html">Galeria de Fotos</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="jogar.html" class="btn">Jogar</a></li>
+                <li><a href="jogar.html">Jogar</a></li>
             </ul>
         </nav>
     </header>
@@ -33,12 +37,13 @@
         <p>© 2025 Jogo A Lenda - Desenvolvido por Fabinhutads</p>
     </footer>
 
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/aos.js"></script>
     <script>
-        function mostrarmenu() {
-            document.querySelector(".header-nav").classList.toggle("ativo");
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('ativo');
         }
     </script>
+
 </body>
 </html>
+    
